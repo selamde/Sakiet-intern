@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 700" width="100%" height="100%">
+  <defs>
+    <linearGradient id="womenBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a044e" />
+      <stop offset="50%" stop-color="#2e1065" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="dressGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e" />
+      <stop offset="100%" stop-color="#be123c" />
+    </linearGradient>
+    <linearGradient id="roseGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fb7185" />
+      <stop offset="100%" stop-color="#fecdd3" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="700" fill="url(#womenBg)" rx="20" />
+  <circle cx="300" cy="310" r="210" fill="#701a75" opacity="0.25" />
+  <circle cx="300" cy="310" r="160" fill="#be185d" opacity="0.15" />
+
+  <!-- Stylized Elegant Dress Silhouette -->
+  <!-- Neckline & Straps -->
+  <path d="M260 210 L280 270 L300 290 L320 270 L340 210 Z" fill="url(#dressGrad)" />
+  <!-- Bodice -->
+  <path d="M260 270 Q300 295 340 270 L330 380 Q300 395 270 380 Z" fill="url(#dressGrad)" />
+  <!-- Flowing Maxi Skirt -->
+  <path d="M270 380 Q300 395 330 380 L390 580 Q300 600 210 580 Z" fill="url(#dressGrad)" />
+  <!-- Waist Ribbon / Belt -->
+  <rect x="268" y="375" width="64" height="12" rx="4" fill="url(#roseGold)" />
+
+  <!-- Chic Handbag Floating Beside -->
+  <g transform="translate(370, 390)">
+    <!-- Handle -->
+    <path d="M25 35 C25 10 75 10 75 35" stroke="url(#roseGold)" stroke-width="4" fill="none" />
+    <!-- Bag body -->
+    <path d="M15 35 L85 35 L95 95 L5 95 Z" fill="#0f172a" stroke="url(#roseGold)" stroke-width="2" />
+    <!-- Flap -->
+    <path d="M15 35 L85 35 L60 65 L40 65 Z" fill="#1e293b" />
+    <circle cx="50" cy="65" r="4" fill="url(#roseGold)" />
+  </g>
+
+  <!-- Tag overlay -->
+  <rect x="190" y="615" width="220" height="44" rx="22" fill="#0f172a" stroke="url(#roseGold)" stroke-width="1.5" />
+  <text x="300" y="643" fill="#f8fafc" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="bold" text-anchor="middle" letter-spacing="2">WOMEN'S ATELIER</text>
+</svg>

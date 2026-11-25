@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="ecomBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="purpleGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366F1" />
+      <stop offset="100%" stop-color="#A855F7" />
+    </linearGradient>
+    <linearGradient id="itemCard" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+  </defs>
+
+  <!-- Frame Background -->
+  <rect width="600" height="360" fill="url(#ecomBg)" rx="16" />
+  
+  <!-- Browser Header Bar -->
+  <rect width="600" height="42" fill="#111827" rx="16" />
+  <rect y="26" width="600" height="16" fill="#111827" />
+  <line x1="0" y1="42" x2="600" y2="42" stroke="#1F2937" stroke-width="1" />
+  
+  <!-- Window Dots -->
+  <circle cx="24" cy="21" r="5" fill="#EF4444" />
+  <circle cx="42" cy="21" r="5" fill="#F59E0B" />
+  <circle cx="60" cy="21" r="5" fill="#10B981" />
+  
+  <!-- Search/URL Bar -->
+  <rect x="90" y="10" width="300" height="22" rx="6" fill="#1F2937" />
+  <text x="110" y="25" fill="#9CA3AF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">https://shopnova-store.web.app</text>
+
+  <!-- App Header / Navbar -->
+  <rect x="24" y="58" width="552" height="40" rx="8" fill="#1E293B" opacity="0.7" />
+  <text x="44" y="83" fill="#F3F4F6" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="bold">Shop<tspan fill="#818CF8">Nova</tspan></text>
+  
+  <!-- Nav items -->
+  <rect x="150" y="72" width="40" height="10" rx="5" fill="#64748B" />
+  <rect x="205" y="72" width="48" height="10" rx="5" fill="#64748B" />
+  <rect x="268" y="72" width="44" height="10" rx="5" fill="#64748B" />
+  
+  <!-- Cart badge -->
+  <rect x="500" y="66" width="60" height="24" rx="12" fill="url(#purpleGlow)" />
+  <text x="530" y="82" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Cart (3)</text>
+
+  <!-- Hero Promo Banner -->
+  <rect x="24" y="112" width="552" height="74" rx="12" fill="#1E1B4B" stroke="#4338CA" stroke-width="1" />
+  <text x="44" y="142" fill="#C7D2FE" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="bold">Summer Tech Gadgets Sale</text>
+  <text x="44" y="163" fill="#818CF8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Up to 40% OFF on all wireless audio gear</text>
+  <rect x="440" y="132" width="116" height="32" rx="8" fill="url(#purpleGlow)" />
+  <text x="498" y="152" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Explore Deals</text>
+
+  <!-- Product Cards Grid (3 cards) -->
+  <!-- Card 1 -->
+  <g transform="translate(24, 200)">
+    <rect width="174" height="140" rx="10" fill="url(#itemCard)" stroke="#334155" stroke-width="1" />
+    <rect x="12" y="12" width="150" height="66" rx="6" fill="#0F172A" />
+    <!-- headphone icon visual -->
+    <circle cx="87" cy="45" r="20" fill="none" stroke="#818CF8" stroke-width="3" />
+    <rect x="67" y="42" width="6" height="14" rx="3" fill="#818CF8" />
+    <rect x="101" y="42" width="6" height="14" rx="3" fill="#818CF8" />
+    
+    <text x="12" y="96" fill="#F1F5F9" font-family="sans-serif" font-size="11" font-weight="bold">Pro Audio Headset</text>
+    <text x="12" y="124" fill="#38BDF8" font-family="sans-serif" font-size="12" font-weight="bold">$189.99</text>
+    <rect x="114" y="108" width="48" height="22" rx="6" fill="#6366F1" />
+    <text x="138" y="123" fill="#FFFFFF" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">+ Add</text>
+  </g>
+
+  <!-- Card 2 -->
+  <g transform="translate(213, 200)">
+    <rect width="174" height="140" rx="10" fill="url(#itemCard)" stroke="#4F46E5" stroke-width="1" />
+    <rect x="12" y="12" width="150" height="66" rx="6" fill="#0F172A" />
+    <!-- smartwatch visual -->
+    <rect x="76" y="28" width="22" height="34" rx="6" fill="#1E293B" stroke="#A855F7" stroke-width="2" />
+    <circle cx="87" cy="45" r="7" fill="#A855F7" opacity="0.3" />
+    
+    <text x="12" y="96" fill="#F1F5F9" font-family="sans-serif" font-size="11" font-weight="bold">Apex Smart Watch</text>
+    <text x="12" y="124" fill="#38BDF8" font-family="sans-serif" font-size="12" font-weight="bold">$249.00</text>
+    <rect x="114" y="108" width="48" height="22" rx="6" fill="#6366F1" />
+    <text x="138" y="123" fill="#FFFFFF" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">+ Add</text>
+  </g>
+
+  <!-- Card 3 -->
+  <g transform="translate(402, 200)">
+    <rect width="174" height="140" rx="10" fill="url(#itemCard)" stroke="#334155" stroke-width="1" />
+    <rect x="12" y="12" width="150" height="66" rx="6" fill="#0F172A" />
+    <!-- keyboard visual -->
+    <rect x="42" y="34" width="90" height="22" rx="4" fill="#1E293B" stroke="#06B6D4" stroke-width="2" />
+    <circle cx="55" cy="45" r="2" fill="#06B6D4" />
+    <circle cx="70" cy="45" r="2" fill="#06B6D4" />
+    <circle cx="85" cy="45" r="2" fill="#06B6D4" />
+    <circle cx="100" cy="45" r="2" fill="#06B6D4" />
+    <circle cx="115" cy="45" r="2" fill="#06B6D4" />
+    
+    <text x="12" y="96" fill="#F1F5F9" font-family="sans-serif" font-size="11" font-weight="bold">Mechanical Keyboard</text>
+    <text x="12" y="124" fill="#38BDF8" font-family="sans-serif" font-size="12" font-weight="bold">$129.50</text>
+    <rect x="114" y="108" width="48" height="22" rx="6" fill="#6366F1" />
+    <text x="138" y="123" fill="#FFFFFF" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">+ Add</text>
+  </g>
+</svg>

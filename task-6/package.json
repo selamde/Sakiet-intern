@@ -1,0 +1,18 @@
+{
+  "name": "userhub-fullstack-system",
+  "version": "1.0.0",
+  "description": "UserHub: Modern Full Stack User Management System (React, Express, Prisma, PostgreSQL)",
+  "scripts": {
+    "install:all": "npm --prefix backend install && npm --prefix frontend install",
+    "backend:dev": "npm --prefix backend run dev",
+    "backend:start": "npm --prefix backend start",
+    "backend:test": "npm --prefix backend test",
+    "frontend:dev": "npm --prefix frontend run dev",
+    "frontend:build": "npm --prefix frontend run build",
+    "prisma:generate": "npm --prefix backend run prisma:generate",
+    "prisma:migrate": "npm --prefix backend run prisma:migrate",
+    "prisma:studio": "npm --prefix backend run prisma:studio"
+  },
+  "author": "Full Stack Engineering Team",
+  "license": "MIT"
+}

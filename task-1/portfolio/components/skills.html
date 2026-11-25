@@ -1,0 +1,113 @@
+ <section id="skills" class="bg-[#090D16] py-20 lg:py-28">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-10 lg:gap-16">
+
+    <!-- Left: heading + filter -->
+    <div class="lg:col-span-4">
+      <div class="lg:sticky lg:top-24">
+        <h2 class="text-3xl sm:text-4xl font-heading font-bold text-white tracking-tight">Skills and technologies</h2>
+        <p class="mt-4 text-slate-300 max-w-sm">The tools I reach for every day, from semantic markup to shipping with Git.</p>
+
+        <div class="mt-8 flex lg:flex-col gap-2 flex-wrap" role="tablist" aria-label="Filter skills by category">
+          <button type="button" role="tab" aria-selected="true" data-category="all"
+            class="skill-filter-btn group flex items-center justify-between gap-6 rounded-lg px-4 py-2.5 text-sm font-medium text-left transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400">
+            <span>All skills</span><span class="skill-count tabular-nums text-xs opacity-70"></span>
+          </button>
+          <button type="button" role="tab" aria-selected="false" data-category="frontend"
+            class="skill-filter-btn group flex items-center justify-between gap-6 rounded-lg px-4 py-2.5 text-sm font-medium text-left transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400">
+            <span>Frontend</span><span class="skill-count tabular-nums text-xs opacity-70"></span>
+          </button>
+          <button type="button" role="tab" aria-selected="false" data-category="tools"
+            class="skill-filter-btn group flex items-center justify-between gap-6 rounded-lg px-4 py-2.5 text-sm font-medium text-left transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400">
+            <span>Tools and workflow</span><span class="skill-count tabular-nums text-xs opacity-70"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: skill rows -->
+    <ul id="skillsGrid" class="lg:col-span-8 divide-y divide-slate-800/80 border-y border-slate-800/80">
+
+      <li class="skill-row py-6 sm:py-7 grid sm:grid-cols-[1fr_16rem] gap-x-10 gap-y-4 items-center" data-category="frontend" data-level="95">
+        <div>
+          <h3 class="text-lg font-heading font-semibold text-white">HTML5</h3>
+          <p class="mt-1 text-sm text-slate-400 max-w-md">Semantic structure, SEO, and accessible ARIA markup.</p>
+        </div>
+        <div><div class="skill-meter flex gap-[3px] h-5" aria-hidden="true"></div>
+          <p class="mt-2 text-xs text-slate-400">Advanced<span class="sr-only">, 95 out of 100</span></p></div>
+      </li>
+
+      <li class="skill-row py-6 sm:py-7 grid sm:grid-cols-[1fr_16rem] gap-x-10 gap-y-4 items-center" data-category="frontend" data-level="90">
+        <div>
+          <h3 class="text-lg font-heading font-semibold text-white">CSS3</h3>
+          <p class="mt-1 text-sm text-slate-400 max-w-md">Flexbox, Grid, custom animations, and media queries.</p>
+        </div>
+        <div><div class="skill-meter flex gap-[3px] h-5" aria-hidden="true"></div>
+          <p class="mt-2 text-xs text-slate-400">Advanced<span class="sr-only">, 90 out of 100</span></p></div>
+      </li>
+
+      <li class="skill-row py-6 sm:py-7 grid sm:grid-cols-[1fr_16rem] gap-x-10 gap-y-4 items-center" data-category="frontend" data-level="88">
+        <div>
+          <h3 class="text-lg font-heading font-semibold text-white">JavaScript (ES6+)</h3>
+          <p class="mt-1 text-sm text-slate-400 max-w-md">DOM work, async/await, the Fetch API, and event handling.</p>
+        </div>
+        <div><div class="skill-meter flex gap-[3px] h-5" aria-hidden="true"></div>
+          <p class="mt-2 text-xs text-slate-400">Proficient<span class="sr-only">, 88 out of 100</span></p></div>
+      </li>
+
+      <li class="skill-row py-6 sm:py-7 grid sm:grid-cols-[1fr_16rem] gap-x-10 gap-y-4 items-center" data-category="frontend" data-level="92">
+        <div>
+          <h3 class="text-lg font-heading font-semibold text-white">Tailwind CSS</h3>
+          <p class="mt-1 text-sm text-slate-400 max-w-md">Utility-first styling, dark mode, and custom design systems.</p>
+        </div>
+        <div><div class="skill-meter flex gap-[3px] h-5" aria-hidden="true"></div>
+          <p class="mt-2 text-xs text-slate-400">Advanced<span class="sr-only">, 92 out of 100</span></p></div>
+      </li>
+
+      <li class="skill-row py-6 sm:py-7 grid sm:grid-cols-[1fr_16rem] gap-x-10 gap-y-4 items-center" data-category="frontend" data-level="85">
+        <div>
+          <h3 class="text-lg font-heading font-semibold text-white">Bootstrap</h3>
+          <p class="mt-1 text-sm text-slate-400 max-w-md">Grid system, ready-made components, and fast prototyping.</p>
+        </div>
+        <div><div class="skill-meter flex gap-[3px] h-5" aria-hidden="true"></div>
+          <p class="mt-2 text-xs text-slate-400">Proficient<span class="sr-only">, 85 out of 100</span></p></div>
+      </li>
+
+      <li class="skill-row py-6 sm:py-7 grid sm:grid-cols-[1fr_16rem] gap-x-10 gap-y-4 items-center" data-category="frontend" data-level="94">
+        <div>
+          <h3 class="text-lg font-heading font-semibold text-white">Responsive design</h3>
+          <p class="mt-1 text-sm text-slate-400 max-w-md">Mobile-first layouts that hold up across browsers and screen sizes.</p>
+        </div>
+        <div><div class="skill-meter flex gap-[3px] h-5" aria-hidden="true"></div>
+          <p class="mt-2 text-xs text-slate-400">Advanced<span class="sr-only">, 94 out of 100</span></p></div>
+      </li>
+
+      <li class="skill-row py-6 sm:py-7 grid sm:grid-cols-[1fr_16rem] gap-x-10 gap-y-4 items-center" data-category="tools" data-level="86">
+        <div>
+          <h3 class="text-lg font-heading font-semibold text-white">Git and GitHub</h3>
+          <p class="mt-1 text-sm text-slate-400 max-w-md">Branching workflows, pull requests, and code review.</p>
+        </div>
+        <div><div class="skill-meter flex gap-[3px] h-5" aria-hidden="true"></div>
+          <p class="mt-2 text-xs text-slate-400">Proficient<span class="sr-only">, 86 out of 100</span></p></div>
+      </li>
+
+      <li class="skill-row py-6 sm:py-7 grid sm:grid-cols-[1fr_16rem] gap-x-10 gap-y-4 items-center" data-category="tools" data-level="88">
+        <div>
+          <h3 class="text-lg font-heading font-semibold text-white">Tools and environment</h3>
+          <p class="mt-1 text-sm text-slate-400 max-w-md">VS Code, Chrome DevTools, npm, the command line, and debugging.</p>
+        </div>
+        <div><div class="skill-meter flex gap-[3px] h-5" aria-hidden="true"></div>
+          <p class="mt-2 text-xs text-slate-400">Proficient<span class="sr-only">, 88 out of 100</span></p></div>
+      </li>
+
+      <li class="skill-row py-6 sm:py-7 grid sm:grid-cols-[1fr_16rem] gap-x-10 gap-y-4 items-center" data-category="tools" data-level="82">
+        <div>
+          <h3 class="text-lg font-heading font-semibold text-white">RESTful APIs</h3>
+          <p class="mt-1 text-sm text-slate-400 max-w-md">Consuming async services, handling JSON payloads, and error states.</p>
+        </div>
+        <div><div class="skill-meter flex gap-[3px] h-5" aria-hidden="true"></div>
+          <p class="mt-2 text-xs text-slate-400">Proficient<span class="sr-only">, 82 out of 100</span></p></div>
+      </li>
+
+    </ul>
+  </div>
+</section>

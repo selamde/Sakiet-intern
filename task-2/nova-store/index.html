@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NOVA STORE - Discover your perfect style with our curated modern fashion essentials, designer footwear, and luxury accessories.">
+  <meta name="author" content="NOVA STORE">
+  <title>NOVA STORE | Modern Fashion &amp; Luxury Lifestyle</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons 1.11.3 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%230F172A'/><text x='50' y='68' font-size='55' font-weight='bold' fill='%23D97706' text-anchor='middle'>N</text></svg>">
+</head>
+<body>
+
+  <!-- =========================================================================
+       TOP ANNOUNCEMENT BAR
+       ========================================================================= -->
+  <div class="top-bar text-center">
+    <div class="container d-flex justify-content-between align-items-center">
+      <span class="d-none d-md-inline small text-secondary">
+        <i class="bi bi-shield-check text-warning me-1"></i> 100% Authentic Designer Guarantee
+      </span>
+      <span class="mx-auto mx-md-0 fw-medium">
+        ⚡ Complimentary Worldwide Shipping on Orders Over $100 &bull; Use Code <span class="badge bg-warning text-dark fw-bold">NOVA2026</span>
+      </span>
+      <span class="d-none d-md-inline small text-secondary">
+        <a href="#about" class="text-white text-decoration-none">Need Help?</a>
+      </span>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       NAVIGATION BAR
+       ========================================================================= -->
+  <nav class="navbar navbar-expand-lg sticky-top nova-navbar" aria-label="Main navigation">
+    <div class="container">
+      
+      <!-- Logo -->
+      <a class="navbar-brand navbar-brand-logo" href="#home">
+        NOVA STORE<span class="dot"></span>
+      </a>
+
+      <!-- Navbar Action Icons (Mobile order) -->
+      <div class="d-flex align-items-center gap-2 order-lg-3">
+        
+        <!-- Search Trigger Icon -->
+        <a href="#products" class="nav-action-btn" aria-label="Search products" onclick="document.getElementById('productSearchInput').focus();">
+          <i class="bi bi-search"></i>
+        </a>
+
+        <!-- Wishlist Icon with Counter -->
+        <button type="button" class="nav-action-btn" data-bs-toggle="offcanvas" data-bs-target="#wishlistOffcanvas" aria-controls="wishlistOffcanvas" aria-label="View wishlist">
+          <i class="bi bi-heart"></i>
+          <span class="badge-counter badge-wishlist wishlist-badge" style="display: none;">0</span>
+        </button>
+
+        <!-- Shopping Cart Icon with Counter -->
+        <button type="button" class="nav-action-btn" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas" aria-controls="cartOffcanvas" aria-label="View shopping cart">
+          <i class="bi bi-bag"></i>
+          <span class="badge-counter cart-badge" style="display: none;">0</span>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler border-0 p-2 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-2 text-dark"></i>
+        </button>
+
+      </div>
+
+      <!-- Collapsible Navigation Menu -->
+      <div class="collapse navbar-collapse order-lg-2" id="navbarContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 py-2 py-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#categories">Categories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#products">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#deals">Deals</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- =========================================================================
+       B. HERO SECTION
+       ========================================================================= -->
+  <section id="home" class="hero-section">
+    <div class="container position-relative">
+      <div class="row align-items-center g-5">
+        
+        <!-- Left Hero Content -->
+        <div class="col-lg-6 text-center text-lg-start">
+          
+          <div class="hero-pill-badge">
+            <span class="sparkle">✦</span> New Collection 2026
+          </div>
+
+          <h1 class="hero-title">
+            Discover Your <br class="d-none d-sm-inline">
+            <span class="font-serif fst-italic fw-normal text-muted">Perfect</span> Style.
+          </h1>
+
+          <p class="hero-description mx-auto mx-lg-0">
+            Elevate your wardrobe with thoughtfully curated modern fashion essentials. Designed with architectural silhouettes, premium natural fabrics, and uncompromising craftsmanship.
+          </p>
+
+          <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start mb-4">
+            <a href="#products" class="btn-nova-primary">
+              <span>Shop Now</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+            <a href="#categories" class="btn-nova-outline">
+              <span>Explore Categories</span>
+            </a>
+          </div>
+
+          <!-- Trust Badges -->
+          <div class="pt-3 border-top d-flex flex-wrap gap-4 justify-content-center justify-content-lg-start text-muted small">
+            <div><i class="bi bi-check2-circle text-success me-1"></i> Sustainable Fibers</div>
+            <div><i class="bi bi-truck text-primary me-1"></i> Fast Global Dispatch</div>
+            <div><i class="bi bi-arrow-counterclockwise text-warning me-1"></i> 30-Day Free Returns</div>
+          </div>
+
+        </div>
+
+        <!-- Right Hero Visual -->
+        <div class="col-lg-6">
+          <div class="position-relative mx-auto text-center" style="max-width: 540px;">
+            
+            <div class="rounded-4 overflow-hidden shadow-lg border bg-white p-2">
+              <img src="assets/images/hero-fashion.svg" 
+                   alt="NOVA STORE Autumn 2026 High Fashion Drop" 
+                   class="img-fluid rounded-4 w-100" 
+                   style="min-height: 380px; object-fit: cover;"
+                   loading="eager">
+            </div>
+
+            <!-- Floating Hero Stat Card -->
+            <div class="hero-floating-stat d-none d-sm-flex">
+              <div class="rounded-circle bg-warning bg-opacity-25 p-3 text-warning-emphasis d-flex align-items-center justify-content-center" style="width: 48px; height: 48px;">
+                <i class="bi bi-star-fill text-warning fs-5"></i>
+              </div>
+              <div class="text-start">
+                <div class="fw-bold fs-6 text-dark">4.9 / 5.0 Rating</div>
+                <div class="text-muted small">Over 15,000+ Happy Clients</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       C. CATEGORIES SECTION
+       ========================================================================= -->
+  <section id="categories" class="py-5 my-4">
+    <div class="container">
+      
+      <!-- Section Header -->
+      <div class="section-header text-center">
+        <span class="section-pill">Curated Collections</span>
+        <h2 class="section-title">Shop by Category</h2>
+        <p class="section-subtitle">
+          Explore our seasonal edits tailored for every silhouette, occasion, and modern aesthetic.
+        </p>
+      </div>
+
+      <!-- Categories Grid (4 items required) -->
+      <div class="row g-4">
+        
+        <!-- Category 1: Men's Fashion -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="category-card cat-card-link" data-target-cat="Men's Fashion" role="button" tabindex="0">
+            <img src="assets/images/cat-mens.svg" alt="Men's Fashion Collection" class="category-img" loading="lazy">
+            <div class="category-overlay">
+              <h3>Men's Fashion</h3>
+              <p>Tailored blazers, linen shirts &amp; casual cuts</p>
+              <span class="btn-explore-cat">Explore Men's <i class="bi bi-arrow-right"></i></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 2: Women's Fashion -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="category-card cat-card-link" data-target-cat="Women's Fashion" role="button" tabindex="0">
+            <img src="assets/images/cat-womens.svg" alt="Women's Fashion Atelier" class="category-img" loading="lazy">
+            <div class="category-overlay">
+              <h3>Women's Fashion</h3>
+              <p>Silk dresses, trench coats &amp; knits</p>
+              <span class="btn-explore-cat">Explore Women's <i class="bi bi-arrow-right"></i></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 3: Shoes -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="category-card cat-card-link" data-target-cat="Shoes" role="button" tabindex="0">
+            <img src="assets/images/cat-shoes.svg" alt="Designer Footwear and Shoes" class="category-img" loading="lazy">
+            <div class="category-overlay">
+              <h3>Shoes</h3>
+              <p>Leather sneakers, boots &amp; driving loafers</p>
+              <span class="btn-explore-cat">Explore Shoes <i class="bi bi-arrow-right"></i></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 4: Accessories -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="category-card cat-card-link" data-target-cat="Accessories" role="button" tabindex="0">
+            <img src="assets/images/cat-accessories.svg" alt="Luxury Accessories & Watches" class="category-img" loading="lazy">
+            <div class="category-overlay">
+              <h3>Accessories</h3>
+              <p>Timepieces, eyewear &amp; pebble leather bags</p>
+              <span class="btn-explore-cat">Explore Accessories <i class="bi bi-arrow-right"></i></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       D. FEATURED PRODUCTS SECTION (With Search & Category Filters)
+       ========================================================================= -->
+  <section id="products" class="py-5 bg-light bg-opacity-50">
+    <div class="container py-3">
+      
+      <!-- Section Header -->
+      <div class="section-header text-center">
+        <span class="section-pill">Our Best Edits</span>
+        <h2 class="section-title">Featured Products</h2>
+        <p class="section-subtitle">
+          Handpicked premium essentials combining architectural minimalism with daily comfort.
+        </p>
+      </div>
+
+      <!-- Controls Row: Category Filter Tabs & Search Bar -->
+      <div class="row align-items-center justify-content-between g-3 mb-4">
+        
+        <!-- Category Filter Pills -->
+        <div class="col-12 col-lg-8">
+          <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-lg-start" role="tablist">
+            <button type="button" class="filter-btn active" data-category="all">All Products</button>
+            <button type="button" class="filter-btn" data-category="Men's Fashion">Men's Fashion</button>
+            <button type="button" class="filter-btn" data-category="Women's Fashion">Women's Fashion</button>
+            <button type="button" class="filter-btn" data-category="Shoes">Shoes</button>
+            <button type="button" class="filter-btn" data-category="Accessories">Accessories</button>
+          </div>
+        </div>
+
+        <!-- Live Search Input -->
+        <div class="col-12 col-lg-4">
+          <form id="productSearchForm" class="search-input-wrapper ms-auto" onsubmit="return false;">
+            <i class="bi bi-search search-icon"></i>
+            <input type="text" id="productSearchInput" class="form-control" placeholder="Search by name or category..." aria-label="Search products">
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Result Count Tag -->
+      <div class="d-flex justify-content-between align-items-center mb-4 text-muted small">
+        <span id="productsCountBadge" class="fw-semibold">Showing products</span>
+        <span class="d-none d-md-inline"><i class="bi bi-truck me-1"></i> Free Shipping on orders over $100</span>
+      </div>
+
+      <!-- Products Grid (Rendered dynamically via script.js) -->
+      <div id="productsContainer" class="row g-4">
+        <!-- Product cards injected by JavaScript -->
+      </div>
+
+      <!-- No Products Found Message (Hidden by default) -->
+      <div id="noProductsMessage" class="d-none text-center py-5">
+        <div class="p-5 bg-white rounded-4 border shadow-sm max-w-md mx-auto" style="max-width: 480px;">
+          <div class="fs-1 text-muted mb-3"><i class="bi bi-search"></i></div>
+          <h4 class="fw-bold text-dark">No Products Found</h4>
+          <p class="text-muted small">We couldn't find any products matching your search criteria. Try modifying your keywords or clearing the category filter.</p>
+          <button type="button" id="resetFiltersBtn" class="btn btn-nova-primary mt-2">
+            Reset Filters
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       E. PROMOTIONAL BANNER SECTION
+       ========================================================================= -->
+  <section id="deals" class="py-5">
+    <div class="container">
+      <div class="promo-banner">
+        <div class="row align-items-center">
+          
+          <div class="col-lg-7 text-center text-lg-start z-1">
+            <span class="promo-tag">Limited Time Exclusive Offer</span>
+            <h2>Mid-Season Flash Sale <br><span class="text-warning">Up to 40% OFF</span></h2>
+            <p class="text-light opacity-75 mb-4" style="max-width: 520px;">
+              Don't miss out on premium silk blends, Italian calfskin sneakers, and structured tailored trench coats at unprecedented seasonal markdowns.
+            </p>
+
+            <!-- Live Countdown Timer -->
+            <div class="promo-countdown justify-content-center justify-content-lg-start">
+              <div class="countdown-box">
+                <div id="countdownHours" class="count-num">08</div>
+                <div class="count-label">Hours</div>
+              </div>
+              <span class="fs-3 fw-bold text-warning">:</span>
+              <div class="countdown-box">
+                <div id="countdownMins" class="count-num">45</div>
+                <div class="count-label">Mins</div>
+              </div>
+              <span class="fs-3 fw-bold text-warning">:</span>
+              <div class="countdown-box">
+                <div id="countdownSecs" class="count-num">20</div>
+                <div class="count-label">Secs</div>
+              </div>
+            </div>
+
+            <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+              <a href="#products" class="btn btn-warning text-dark fw-bold px-4 py-3 rounded-pill shadow-lg">
+                Explore Deals Now <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+              <span class="text-white-50 align-self-center small">*Prices as marked. While inventory lasts.</span>
+            </div>
+          </div>
+
+          <div class="col-lg-5 text-center d-none d-lg-block">
+            <img src="assets/images/promo-banner.svg" alt="Promotional 40% Off Banner Artwork" class="img-fluid rounded-4 shadow" style="max-height: 280px;" loading="lazy">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       F. ABOUT SECTION & VALUE PROPOSITIONS
+       ========================================================================= -->
+  <section id="about" class="py-5 my-3">
+    <div class="container">
+      
+      <div class="row align-items-center g-5 mb-5">
+        <div class="col-lg-6">
+          <span class="section-pill">Our Philosophy</span>
+          <h2 class="section-title">Designed for Distinction, <br>Engineered to Last.</h2>
+          <p class="text-muted leading-relaxed mb-4">
+            Founded with a vision to redefine modern wardrobe essentials, <strong>NOVA STORE</strong> exists at the intersection of minimalist design, pure comfort, and ethical production. We believe that true luxury lies not in excess, but in the precision of the cut, the integrity of the textile, and how the garment makes you feel.
+          </p>
+          <p class="text-muted leading-relaxed mb-4">
+            Each seasonal capsule is manufactured in collaboration with heritage family-owned mills across Italy, Portugal, and Japan, ensuring sustainable organic sourcing and dignified artisan labor standards.
+          </p>
+          <div class="d-flex align-items-center gap-4 pt-2">
+            <div>
+              <div class="h3 fw-bold text-dark mb-0">100%</div>
+              <div class="text-muted small">Organic Certified</div>
+            </div>
+            <div class="vr"></div>
+            <div>
+              <div class="h3 fw-bold text-dark mb-0">50k+</div>
+              <div class="text-muted small">Global Deliveries</div>
+            </div>
+            <div class="vr"></div>
+            <div>
+              <div class="h3 fw-bold text-dark mb-0">Zero</div>
+              <div class="text-muted small">Carbon Footprint Goal</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="p-3 bg-light rounded-4 border">
+            <img src="assets/images/cat-womens.svg" alt="About NOVA STORE Quality" class="img-fluid rounded-4 w-100" style="max-height: 420px; object-fit: cover;" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 Value Proposition Cards -->
+      <div class="row g-4">
+        
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="about-feature-box">
+            <div class="about-icon"><i class="bi bi-box-seam"></i></div>
+            <h5 class="fw-bold text-dark mb-2">Free Express Shipping</h5>
+            <p class="text-muted small mb-0">Enjoy complimentary tracked delivery worldwide on all orders exceeding $100.</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="about-feature-box">
+            <div class="about-icon"><i class="bi bi-shield-check"></i></div>
+            <h5 class="fw-bold text-dark mb-2">30-Day Easy Returns</h5>
+            <p class="text-muted small mb-0">No questions asked. Free prepaid return labels included in every shipped order.</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="about-feature-box">
+            <div class="about-icon"><i class="bi bi-flower1"></i></div>
+            <h5 class="fw-bold text-dark mb-2">100% Sustainable</h5>
+            <p class="text-muted small mb-0">GOTS-certified organic cotton, regenerated fibers, and plastic-free packaging.</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="about-feature-box">
+            <div class="about-icon"><i class="bi bi-chat-dots"></i></div>
+            <h5 class="fw-bold text-dark mb-2">24/7 Concierge Support</h5>
+            <p class="text-muted small mb-0">Dedicated styling advisors and round-the-clock customer care at your service.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       G. NEWSLETTER SUBSCRIPTION SECTION
+       ========================================================================= -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="newsletter-card">
+        <span class="section-pill">Be the First to Know</span>
+        <h2 class="fw-bold text-dark mb-2">Join the NOVA VIP Club</h2>
+        <p class="text-muted mx-auto" style="max-width: 500px;">
+          Subscribe to receive private preview drops, style lookbooks, and an instant <strong>15% OFF coupon</strong> on your initial order.
+        </p>
+
+        <!-- Newsletter Form -->
+        <form id="newsletterForm" class="newsletter-form" novalidate>
+          <input type="email" id="newsletterEmail" class="form-control" placeholder="Enter your email address..." aria-label="Email Address for newsletter" required>
+          <button type="submit" class="btn-subscribe">
+            Subscribe <i class="bi bi-send ms-1"></i>
+          </button>
+        </form>
+
+        <!-- Dynamic Feedback Messages -->
+        <div id="newsletterSuccess" class="newsletter-feedback alert alert-success mt-3 mx-auto max-w-md" role="alert" style="max-width: 500px;"></div>
+        <div id="newsletterError" class="newsletter-feedback alert alert-danger mt-3 mx-auto max-w-md" role="alert" style="max-width: 500px;"></div>
+
+        <div class="text-muted mt-3" style="font-size: 0.75rem;">
+          🔒 We respect your privacy. Unsubscribe anytime with one click.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       CONTACT SECTION
+       ========================================================================= -->
+  <section id="contact" class="py-5">
+    <div class="container py-3">
+      <div class="row g-4 align-items-center">
+        
+        <div class="col-lg-5">
+          <span class="section-pill">Customer Care</span>
+          <h2 class="section-title">We'd Love to Hear From You</h2>
+          <p class="text-muted mb-4">
+            Have questions about fit, fabric care, or order tracking? Our client experience team is on standby to assist you.
+          </p>
+
+          <div class="d-flex flex-column gap-3 mb-4">
+            <div class="d-flex align-items-center gap-3">
+              <div class="about-icon mb-0" style="width: 44px; height: 44px; font-size: 1.1rem;"><i class="bi bi-geo-alt"></i></div>
+              <div>
+                <div class="fw-bold text-dark">Flagship Showroom</div>
+                <div class="text-muted small">742 Evergreen Fashion Blvd, New York, NY 10012</div>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center gap-3">
+              <div class="about-icon mb-0" style="width: 44px; height: 44px; font-size: 1.1rem;"><i class="bi bi-envelope"></i></div>
+              <div>
+                <div class="fw-bold text-dark">Email Support</div>
+                <div class="text-muted small"><a href="mailto:support@novastore.fashion" class="text-dark">support@novastore.fashion</a></div>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center gap-3">
+              <div class="about-icon mb-0" style="width: 44px; height: 44px; font-size: 1.1rem;"><i class="bi bi-telephone"></i></div>
+              <div>
+                <div class="fw-bold text-dark">Toll-Free Phone</div>
+                <div class="text-muted small">+1 (800) 555-NOVA (Mon-Fri, 9am - 6pm EST)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="p-4 p-md-5 bg-white rounded-4 border shadow-sm">
+            <h4 class="fw-bold text-dark mb-4">Send a Message</h4>
+            <form onsubmit="event.preventDefault(); alert('Thank you for contacting NOVA STORE! A client advisor will respond within 24 hours.'); this.reset();">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label small fw-bold text-secondary">Your Name</label>
+                  <input type="text" class="form-control rounded-3" placeholder="Jane Doe" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label small fw-bold text-secondary">Email Address</label>
+                  <input type="email" class="form-control rounded-3" placeholder="jane@example.com" required>
+                </div>
+                <div class="col-12">
+                  <label class="form-label small fw-bold text-secondary">Subject</label>
+                  <input type="text" class="form-control rounded-3" placeholder="Order Inquiry, Sizing, or Styling" required>
+                </div>
+                <div class="col-12">
+                  <label class="form-label small fw-bold text-secondary">Message</label>
+                  <textarea class="form-control rounded-3" rows="4" placeholder="How can our styling team help you today?" required></textarea>
+                </div>
+                <div class="col-12 mt-4">
+                  <button type="submit" class="btn-nova-primary w-100 py-3">
+                    Send Message <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       H. FOOTER
+       ========================================================================= -->
+  <footer class="nova-footer">
+    <div class="container">
+      <div class="row g-4">
+        
+        <!-- Brand & About -->
+        <div class="col-lg-4 col-md-6">
+          <div class="navbar-brand-logo text-white mb-3">
+            NOVA STORE<span class="dot"></span>
+          </div>
+          <p class="text-muted pe-lg-4 mb-4 small leading-relaxed">
+            NOVA STORE is a contemporary fashion house curating timeless architectural cuts, luxury natural fibers, and artisan footwear for the modern minimalist.
+          </p>
+          <div class="d-flex align-items-center gap-2">
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="footer-social-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://pinterest.com" target="_blank" rel="noopener" class="footer-social-icon" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener" class="footer-social-icon" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener" class="footer-social-icon" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="footer-social-icon" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#products">Featured Shop</a></li>
+            <li><a href="#deals">Flash Sale</a></li>
+            <li><a href="#about">Our Story</a></li>
+          </ul>
+        </div>
+
+        <!-- Categories -->
+        <div class="col-lg-3 col-md-6 col-6">
+          <h5>Collections</h5>
+          <ul>
+            <li><a href="#products" class="cat-card-link" data-target-cat="Men's Fashion">Men's Tailoring</a></li>
+            <li><a href="#products" class="cat-card-link" data-target-cat="Women's Fashion">Women's Atelier</a></li>
+            <li><a href="#products" class="cat-card-link" data-target-cat="Shoes">Calfskin Footwear</a></li>
+            <li><a href="#products" class="cat-card-link" data-target-cat="Accessories">Leather Accessories</a></li>
+            <li><a href="#products">New Arrivals 2026</a></li>
+          </ul>
+        </div>
+
+        <!-- Customer Care -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Customer Care</h5>
+          <ul>
+            <li><a href="#about">Track Your Order</a></li>
+            <li><a href="#about">Shipping &amp; Duties</a></li>
+            <li><a href="#about">Returns &amp; Exchanges</a></li>
+            <li><a href="#about">Garment Care Guide</a></li>
+            <li><a href="#contact">Contact Client Support</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 text-center text-md-start">
+        <div>
+          &copy; <span id="currentYear">2026</span> NOVA STORE LLC. All rights reserved. Built with HTML5, CSS3, Bootstrap 5, and Vanilla JS.
+        </div>
+        <div class="d-flex gap-3 text-muted">
+          <a href="#about" class="text-muted text-decoration-none small">Privacy Policy</a>
+          <span>&bull;</span>
+          <a href="#about" class="text-muted text-decoration-none small">Terms of Service</a>
+          <span>&bull;</span>
+          <a href="#about" class="text-muted text-decoration-none small">Cookie Settings</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       SHOPPING CART OFFCANVAS (Drawer from Right)
+       ========================================================================= -->
+  <div class="offcanvas offcanvas-end offcanvas-cart" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel">
+    <div class="offcanvas-header border-bottom">
+      <h5 class="offcanvas-title fw-bold text-dark d-flex align-items-center gap-2" id="cartOffcanvasLabel">
+        <i class="bi bi-bag-check text-warning"></i> Your Shopping Bag
+      </h5>
+      <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <!-- Offcanvas Body -->
+    <div class="offcanvas-body d-flex flex-column justify-content-between p-4">
+      
+      <!-- Cart Items List Container -->
+      <div id="cartItemsList" class="flex-grow-1 overflow-y-auto pe-1">
+        <!-- Injected via JavaScript -->
+      </div>
+
+      <!-- Empty Cart State -->
+      <div id="cartEmptyState" class="text-center py-5 my-auto d-none">
+        <div class="mb-3 text-muted fs-1"><i class="bi bi-bag-x"></i></div>
+        <h5 class="fw-bold text-dark mb-2">Your Bag is Empty</h5>
+        <p class="text-muted small mb-4">Discover our curated collection and add your favorite essentials.</p>
+        <button type="button" class="btn-nova-primary" data-bs-dismiss="offcanvas" onclick="location.href='#products';">
+          Start Shopping
+        </button>
+      </div>
+
+      <!-- Cart Summary Footer -->
+      <div class="pt-3 border-top mt-auto">
+        <div class="d-flex justify-content-between mb-2">
+          <span class="text-muted small">Subtotal</span>
+          <span id="cartSubtotal" class="fw-bold text-dark">$0.00</span>
+        </div>
+        <div class="d-flex justify-content-between mb-2">
+          <span class="text-muted small">Estimated Shipping</span>
+          <span id="cartShipping" class="small fw-semibold">$0.00</span>
+        </div>
+        <div class="d-flex justify-content-between fs-5 fw-bold text-dark pt-2 border-top mb-3">
+          <span>Total</span>
+          <span id="cartTotal" class="text-warning-emphasis">$0.00</span>
+        </div>
+
+        <button type="button" id="checkoutBtn" class="btn-nova-primary w-100 py-3 mb-2 shadow-sm">
+          <i class="bi bi-lock-fill me-2"></i> Proceed to Checkout
+        </button>
+        <button type="button" id="clearCartBtn" class="btn btn-outline-secondary w-100 py-2 btn-sm rounded-pill">
+          Clear Shopping Bag
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       WISHLIST OFFCANVAS (Drawer from Right)
+       ========================================================================= -->
+  <div class="offcanvas offcanvas-end offcanvas-cart" tabindex="-1" id="wishlistOffcanvas" aria-labelledby="wishlistOffcanvasLabel">
+    <div class="offcanvas-header border-bottom">
+      <h5 class="offcanvas-title fw-bold text-dark d-flex align-items-center gap-2" id="wishlistOffcanvasLabel">
+        <i class="bi bi-heart-fill text-danger"></i> Saved Items
+      </h5>
+      <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <div class="offcanvas-body d-flex flex-column justify-content-between p-4">
+      <div id="wishlistItemsList" class="flex-grow-1 overflow-y-auto pe-1">
+        <!-- Injected via JavaScript -->
+      </div>
+
+      <div id="wishlistEmptyState" class="text-center py-5 my-auto d-none">
+        <div class="mb-3 text-muted fs-1"><i class="bi bi-heart"></i></div>
+        <h5 class="fw-bold text-dark mb-2">No Saved Items</h5>
+        <p class="text-muted small mb-4">Click the heart icon on any product to save it to your wishlist.</p>
+        <button type="button" class="btn-nova-primary" data-bs-dismiss="offcanvas" onclick="location.href='#products';">
+          Discover Products
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       PRODUCT QUICK VIEW MODAL
+       ========================================================================= -->
+  <div class="modal fade modal-quickview" id="quickViewModal" tabindex="-1" aria-labelledby="quickViewModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header border-0 pb-0">
+          <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body pt-0">
+          <div class="row g-4 align-items-center">
+            
+            <!-- Modal Image -->
+            <div class="col-md-6">
+              <div class="rounded-4 overflow-hidden border bg-light position-relative">
+                <img id="qvProductImg" src="" alt="Product Quick View" class="img-fluid w-100" style="min-height: 340px; object-fit: cover;">
+                <span id="qvProductDiscount" class="product-badge badge-discount position-absolute top-0 start-0 m-3" style="display: none;"></span>
+              </div>
+            </div>
+
+            <!-- Modal Info -->
+            <div class="col-md-6">
+              <span id="qvProductCategory" class="text-uppercase text-muted fw-bold small"></span>
+              <h3 id="qvProductName" class="fw-bold text-dark mt-1 mb-2"></h3>
+
+              <div class="d-flex align-items-center gap-2 mb-3">
+                <div id="qvProductRating" class="text-warning small"></div>
+                <span id="qvProductReviews" class="text-muted small"></span>
+              </div>
+
+              <div class="d-flex align-items-baseline gap-3 mb-3">
+                <span id="qvProductPrice" class="fs-3 fw-bold text-dark"></span>
+                <span id="qvProductOriginalPrice" class="fs-6 text-muted text-decoration-line-through"></span>
+              </div>
+
+              <p id="qvProductDesc" class="text-muted small leading-relaxed mb-4"></p>
+
+              <!-- Size selector -->
+              <div class="mb-3">
+                <span class="d-block small fw-bold text-dark mb-1">Select Size</span>
+                <div class="d-flex gap-2">
+                  <span class="size-pill active">S</span>
+                  <span class="size-pill">M</span>
+                  <span class="size-pill">L</span>
+                  <span class="size-pill">XL</span>
+                </div>
+              </div>
+
+              <!-- Color selector -->
+              <div class="mb-4">
+                <span class="d-block small fw-bold text-dark mb-1">Color Palette</span>
+                <div class="d-flex gap-2">
+                  <span class="color-circle active" style="background-color: #0F172A;" title="Obsidian"></span>
+                  <span class="color-circle" style="background-color: #D97706;" title="Warm Amber"></span>
+                  <span class="color-circle" style="background-color: #CBD5E1;" title="Heather Gray"></span>
+                </div>
+              </div>
+
+              <!-- Quantity & Actions -->
+              <div class="d-flex align-items-center gap-3">
+                <div class="qty-control">
+                  <button type="button" class="qty-btn" id="qvQtyMinus">−</button>
+                  <input type="text" id="qvQuantityInput" class="qty-num border-0 bg-transparent" value="1" readonly style="width: 32px;">
+                  <button type="button" class="qty-btn" id="qvQtyPlus">+</button>
+                </div>
+                <button type="button" id="qvAddToCartBtn" class="btn-nova-primary flex-grow-1">
+                  <i class="bi bi-bag-plus me-1"></i> Add to Bag
+                </button>
+                <button type="button" id="qvWishlistBtn" class="btn btn-nova-outline px-3" aria-label="Toggle Wishlist">
+                  <i class="bi bi-heart"></i>
+                </button>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       FLOATING BACK TO TOP BUTTON
+       ========================================================================= -->
+  <button id="backToTopBtn" type="button" aria-label="Scroll back to top">
+    <i class="bi bi-arrow-up fs-5"></i>
+  </button>
+
+  <!-- =========================================================================
+       TOAST NOTIFICATION CONTAINER
+       ========================================================================= -->
+  <div id="toastContainer" class="toast-container position-fixed bottom-0 end-0 p-3"></div>
+
+  <!-- Bootstrap 5.3.3 JS Bundle (Popper included) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom Vanilla JavaScript -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>

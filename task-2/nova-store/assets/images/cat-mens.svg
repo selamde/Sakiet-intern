@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 700" width="100%" height="100%">
+  <defs>
+    <linearGradient id="menBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="suitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="goldAcc" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#fbbf24" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="700" fill="url(#menBg)" rx="20" />
+  <circle cx="300" cy="300" r="220" fill="#334155" opacity="0.25" />
+  <circle cx="300" cy="300" r="170" fill="#475569" opacity="0.15" />
+  
+  <!-- Stylized Men's Outfit Illustration -->
+  <!-- Blazer / Jacket -->
+  <path d="M180 580 L220 280 L260 250 L340 250 L380 280 L420 580 Z" fill="url(#suitGrad)" />
+  <!-- Lapels -->
+  <path d="M260 250 L300 420 L270 420 L220 280 Z" fill="#475569" />
+  <path d="M340 250 L300 420 L330 420 L380 280 Z" fill="#475569" />
+  <!-- Shirt & Tie -->
+  <path d="M275 250 L300 290 L325 250 Z" fill="#f8fafc" />
+  <path d="M295 290 L305 290 L308 400 L300 420 L292 400 Z" fill="url(#goldAcc)" />
+  <!-- Pocket Square -->
+  <line x1="240" y1="360" x2="270" y2="355" stroke="#f8fafc" stroke-width="4" stroke-linecap="round" />
+  <!-- Buttons -->
+  <circle cx="300" cy="460" r="5" fill="#d97706" />
+  <circle cx="300" cy="500" r="5" fill="#d97706" />
+
+  <!-- Sunglasses -->
+  <g transform="translate(235, 170)">
+    <rect x="0" y="0" width="55" height="32" rx="10" fill="#0f172a" stroke="#d97706" stroke-width="3" />
+    <rect x="75" y="0" width="55" height="32" rx="10" fill="#0f172a" stroke="#d97706" stroke-width="3" />
+    <path d="M55 12 Q65 6 75 12" stroke="#d97706" stroke-width="3" fill="none" />
+    <line x1="10" y1="6" x2="35" y2="26" stroke="#94a3b8" stroke-width="2" opacity="0.6" stroke-linecap="round" />
+    <line x1="85" y1="6" x2="110" y2="26" stroke="#94a3b8" stroke-width="2" opacity="0.6" stroke-linecap="round" />
+  </g>
+
+  <!-- Tag overlay -->
+  <rect x="200" y="615" width="200" height="44" rx="22" fill="#0f172a" stroke="#d97706" stroke-width="1.5" />
+  <text x="300" y="643" fill="#f8fafc" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="bold" text-anchor="middle" letter-spacing="2">MEN'S COLLECTION</text>
+</svg>

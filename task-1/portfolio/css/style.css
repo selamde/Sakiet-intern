@@ -1,0 +1,287 @@
+/* ==========================================================================
+   Modern Dark Developer Theme Stylesheet
+   Portfolio Website: Personal Developer Showcase
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap');
+
+/* --- Root Variables & Theme Config --- */
+:root {
+  --bg-primary: #0B0F19;
+  --bg-secondary: #111827;
+  --bg-tertiary: #1E293B;
+  --accent-purple: #8B5CF6;
+  --accent-indigo: #6366F1;
+  --accent-cyan: #22D3EE;
+  --text-primary: #F9FAFB;
+  --text-secondary: #94A3B8;
+  --text-muted: #64748B;
+  --border-subtle: rgba(148, 163, 184, 0.1);
+  --border-focus: rgba(99, 102, 241, 0.5);
+  --glow-purple: rgba(139, 92, 246, 0.25);
+  --glow-indigo: rgba(99, 102, 241, 0.25);
+}
+
+/* --- Base Resets & Typography --- */
+html {
+  scroll-behavior: smooth;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+body {
+  background-color: #0B0F19;
+  background-image: 
+    radial-gradient(at 10% 10%, rgba(99, 102, 241, 0.08) 0px, transparent 50%),
+    radial-gradient(at 90% 20%, rgba(168, 85, 247, 0.08) 0px, transparent 50%),
+    radial-gradient(at 50% 80%, rgba(34, 211, 238, 0.05) 0px, transparent 50%);
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+/* Headings font */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', 'Inter', sans-serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* --- Custom Scrollbar --- */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B0F19;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2D3748;
+  border-radius: 9999px;
+  border: 2px solid #0B0F19;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4F46E5;
+}
+
+/* --- Glassmorphism Utilities --- */
+.glass-nav {
+  background: rgba(11, 15, 25, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.glass-card {
+  background: rgba(17, 24, 39, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.5);
+}
+
+.glass-card:hover {
+  border-color: rgba(99, 102, 241, 0.35);
+  box-shadow: 0 10px 30px -5px rgba(99, 102, 241, 0.15);
+}
+
+/* --- Subtle Gradient Glows --- */
+.gradient-border-card {
+  position: relative;
+  background: #111827;
+  border-radius: 1rem;
+  z-index: 1;
+}
+
+.gradient-border-card::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.4), rgba(168, 85, 247, 0.2), rgba(34, 211, 238, 0.2));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.gradient-border-card:hover::before {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.8), rgba(168, 85, 247, 0.6), rgba(34, 211, 238, 0.6));
+}
+
+/* --- Floating Animation --- */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float-slow {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float 4s ease-in-out 2s infinite;
+}
+
+/* --- Glowing Pulse Animation --- */
+@keyframes glowPulse {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+.animate-glow {
+  animation: glowPulse 6s ease-in-out infinite;
+}
+
+/* --- Navigation Active Indicator --- */
+.nav-link {
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #6366F1, #A855F7);
+  border-radius: 9999px;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 80%;
+}
+
+.nav-link.active {
+  color: #A5B4FC !important;
+  font-weight: 600;
+}
+
+/* Mobile Nav Active */
+.mobile-nav-link.active {
+  color: #A5B4FC !important;
+  background: rgba(99, 102, 241, 0.12);
+  border-left: 3px solid #6366F1;
+  padding-left: 1rem;
+}
+
+/* --- Form Input States --- */
+.form-input {
+  background-color: rgba(17, 24, 39, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #F8FAFC;
+  transition: all 0.25s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #6366F1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.25);
+  background-color: rgba(17, 24, 39, 0.95);
+}
+
+.form-input.input-error {
+  border-color: #EF4444 !important;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.2) !important;
+}
+
+.form-input.input-success {
+  border-color: #10B981 !important;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2) !important;
+}
+
+.error-message {
+  color: #F87171;
+  font-size: 0.8rem;
+  margin-top: 0.35rem;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: opacity 0.2s ease;
+}
+
+/* --- Back to Top Button --- */
+#backToTopBtn {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#backToTopBtn.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+#backToTopBtn.hide {
+  opacity: 0;
+  transform: translateY(16px);
+  pointer-events: none;
+}
+
+/* --- Button Gradient Glow on Hover --- */
+.btn-primary {
+  background: linear-gradient(135deg, #6366F1, #8B5CF6);
+  color: #FFFFFF;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.25s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #4F46E5, #7C3AED);
+  box-shadow: 0 0 25px rgba(99, 102, 241, 0.5);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: rgba(30, 41, 59, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #E2E8F0;
+  transition: all 0.25s ease;
+}
+
+.btn-secondary:hover {
+  background: rgba(49, 46, 129, 0.4);
+  border-color: rgba(99, 102, 241, 0.4);
+  color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+/* --- Toast / Alert Animation --- */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -20px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+.toast-enter {
+  animation: slideDown 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}

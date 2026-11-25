@@ -1,0 +1,309 @@
+{
+  "info": {
+    "_postman_id": "a918b243-7f3e-4b21-8f5d-user-mgmt-api",
+    "name": "User Management REST API",
+    "description": "Comprehensive Postman test collection for testing the User Management Node.js & Express REST API, covering all CRUD endpoints, positive cases, and negative edge cases.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:5000",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "Root & Health",
+      "item": [
+        {
+          "name": "1. Welcome Message & API Map",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/",
+              "host": ["{{baseUrl}}"],
+              "path": [""]
+            },
+            "description": "Returns welcome message and endpoint index."
+          }
+        }
+      ]
+    },
+    {
+      "name": "GET Requests",
+      "item": [
+        {
+          "name": "2. Get All Users (200 OK)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/users",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "users"]
+            },
+            "description": "Retrieves the full list of all registered users."
+          }
+        },
+        {
+          "name": "3. Get User By ID - Success (200 OK)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/users/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "users", "1"]
+            },
+            "description": "Retrieves user with ID 1 (Abebe Kebede)."
+          }
+        },
+        {
+          "name": "4. Get User By ID - Not Found (404 Not Found)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/users/999",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "users", "999"]
+            },
+            "description": "Attempts to retrieve a user with nonexistent ID 999."
+          }
+        },
+        {
+          "name": "5. Get User By ID - Invalid Format (400 Bad Request)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/users/invalid-id",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "users", "invalid-id"]
+            },
+            "description": "Attempts to retrieve a user with a non-numeric ID parameter."
+          }
+        }
+      ]
+    },
+    {
+      "name": "POST Requests",
+      "item": [
+        {
+          "name": "6. Create User - Success (201 Created)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Bethelhem Tadesse\",\n  \"email\": \"bethelhem@example.com\",\n  \"age\": 22\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/users",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "users"]
+            },
+            "description": "Creates a new user with valid name, email, and age."
+          }
+        },
+        {
+          "name": "7. Create User - Missing Name (400 Bad Request)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"noname@example.com\",\n  \"age\": 25\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/users",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "users"]
+            },
+            "description": "Fails validation because 'name' is missing."
+          }
+        },
+        {
+          "name": "8. Create User - Invalid Email Format (400 Bad Request)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"John Doe\",\n  \"email\": \"not-an-email\",\n  \"age\": 30\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/users",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "users"]
+            },
+            "description": "Fails validation because 'email' does not match standard email pattern."
+          }
+        },
+        {
+          "name": "9. Create User - Negative Age (400 Bad Request)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Jane Smith\",\n  \"email\": \"jane@example.com\",\n  \"age\": -5\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/users",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "users"]
+            },
+            "description": "Fails validation because 'age' must be a positive integer."
+          }
+        },
+        {
+          "name": "10. Create User - Duplicate Email (400 Bad Request)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Duplicate Abebe\",\n  \"email\": \"abebe@example.com\",\n  \"age\": 29\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/users",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "users"]
+            },
+            "description": "Fails validation because 'abebe@example.com' is already registered."
+          }
+        }
+      ]
+    },
+    {
+      "name": "PUT Requests",
+      "item": [
+        {
+          "name": "11. Update User - Success (200 OK)",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Abebe Kebede (Senior)\",\n  \"age\": 25\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/users/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "users", "1"]
+            },
+            "description": "Updates the name and age of user with ID 1."
+          }
+        },
+        {
+          "name": "12. Update User - Nonexistent ID (404 Not Found)",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Ghost User\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/users/999",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "users", "999"]
+            },
+            "description": "Fails with 404 because user ID 999 does not exist."
+          }
+        },
+        {
+          "name": "13. Update User - Duplicate Email Conflict (400 Bad Request)",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"sara@example.com\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/users/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "users", "1"]
+            },
+            "description": "Fails with 400 because 'sara@example.com' belongs to user ID 2."
+          }
+        }
+      ]
+    },
+    {
+      "name": "DELETE Requests",
+      "item": [
+        {
+          "name": "14. Delete User - Success (200 OK)",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/users/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "users", "1"]
+            },
+            "description": "Deletes user with ID 1 from memory."
+          }
+        },
+        {
+          "name": "15. Delete User - Nonexistent ID (404 Not Found)",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/users/999",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "users", "999"]
+            },
+            "description": "Fails with 404 because user ID 999 does not exist."
+          }
+        }
+      ]
+    }
+  ]
+}

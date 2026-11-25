@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="tmBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#090D16" />
+    </linearGradient>
+    <linearGradient id="colBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#131B2E" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+  </defs>
+
+  <!-- Frame Background -->
+  <rect width="600" height="360" fill="url(#tmBg)" rx="16" />
+
+  <!-- Browser Header Bar -->
+  <rect width="600" height="42" fill="#111827" rx="16" />
+  <rect y="26" width="600" height="16" fill="#111827" />
+  <line x1="0" y1="42" x2="600" y2="42" stroke="#1F2937" stroke-width="1" />
+
+  <!-- Window Dots -->
+  <circle cx="24" cy="21" r="5" fill="#EF4444" />
+  <circle cx="42" cy="21" r="5" fill="#F59E0B" />
+  <circle cx="60" cy="21" r="5" fill="#10B981" />
+
+  <!-- Search/URL Bar -->
+  <rect x="90" y="10" width="300" height="22" rx="6" fill="#1F2937" />
+  <text x="110" y="25" fill="#9CA3AF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">https://flowboard-app.io/dashboard</text>
+
+  <!-- Top App Navigation -->
+  <g transform="translate(24, 56)">
+    <text x="0" y="20" fill="#F8FAFC" font-family="sans-serif" font-size="16" font-weight="bold">⚡ TaskFlow Board</text>
+    <rect x="180" y="4" width="84" height="24" rx="12" fill="#312E81" />
+    <text x="222" y="20" fill="#A5B4FC" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Sprint #14</text>
+    <rect x="450" y="2" width="102" height="26" rx="6" fill="#6366F1" />
+    <text x="501" y="19" fill="#FFFFFF" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">+ New Task</text>
+  </g>
+
+  <!-- Columns Layout: 3 Columns (To Do, In Progress, Completed) -->
+  <!-- Column 1: To Do -->
+  <g transform="translate(24, 96)">
+    <rect width="174" height="244" rx="10" fill="url(#colBg)" stroke="#1E293B" stroke-width="1" />
+    <circle cx="16" cy="20" r="4" fill="#F59E0B" />
+    <text x="28" y="24" fill="#E2E8F0" font-family="sans-serif" font-size="12" font-weight="bold">TO DO</text>
+    <rect x="142" y="12" width="20" height="16" rx="8" fill="#334155" />
+    <text x="152" y="24" fill="#94A3B8" font-family="sans-serif" font-size="10" text-anchor="middle">2</text>
+
+    <!-- Card 1 in Col 1 -->
+    <rect x="10" y="40" width="154" height="85" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1" />
+    <rect x="18" y="50" width="56" height="16" rx="4" fill="#7C2D12" />
+    <text x="46" y="62" fill="#FDBA74" font-family="sans-serif" font-size="9" font-weight="bold" text-anchor="middle">RESEARCH</text>
+    <text x="18" y="82" fill="#F1F5F9" font-family="sans-serif" font-size="11" font-weight="600">User Journey Audit</text>
+    <text x="18" y="98" fill="#94A3B8" font-family="sans-serif" font-size="10">Review onboarding drop-off</text>
+    <circle cx="146" cy="110" r="8" fill="#4F46E5" />
+    <text x="146" y="113" fill="#FFF" font-family="sans-serif" font-size="8" text-anchor="middle">A</text>
+
+    <!-- Card 2 in Col 1 -->
+    <rect x="10" y="135" width="154" height="85" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1" />
+    <rect x="18" y="145" width="46" height="16" rx="4" fill="#1E3A8A" />
+    <text x="41" y="157" fill="#93C5FD" font-family="sans-serif" font-size="9" font-weight="bold" text-anchor="middle">FRONT</text>
+    <text x="18" y="177" fill="#F1F5F9" font-family="sans-serif" font-size="11" font-weight="600">Tailwind Dark Theme</text>
+    <text x="18" y="193" fill="#94A3B8" font-family="sans-serif" font-size="10">Implement contrast token</text>
+    <circle cx="146" cy="205" r="8" fill="#0D9488" />
+    <text x="146" y="208" fill="#FFF" font-family="sans-serif" font-size="8" text-anchor="middle">N</text>
+  </g>
+
+  <!-- Column 2: In Progress -->
+  <g transform="translate(213, 96)">
+    <rect width="174" height="244" rx="10" fill="url(#colBg)" stroke="#312E81" stroke-width="1" />
+    <circle cx="16" cy="20" r="4" fill="#6366F1" />
+    <text x="28" y="24" fill="#E2E8F0" font-family="sans-serif" font-size="12" font-weight="bold">IN PROGRESS</text>
+    <rect x="142" y="12" width="20" height="16" rx="8" fill="#4338CA" />
+    <text x="152" y="24" fill="#C7D2FE" font-family="sans-serif" font-size="10" text-anchor="middle">2</text>
+
+    <!-- Card 1 in Col 2 -->
+    <rect x="10" y="40" width="154" height="96" rx="8" fill="#1E293B" stroke="#6366F1" stroke-width="1.5" />
+    <rect x="18" y="50" width="58" height="16" rx="4" fill="#581C87" />
+    <text x="47" y="62" fill="#E9D5FF" font-family="sans-serif" font-size="9" font-weight="bold" text-anchor="middle">FEATURE</text>
+    <text x="18" y="82" fill="#F1F5F9" font-family="sans-serif" font-size="11" font-weight="600">Drag &amp; Drop Kanban</text>
+    <!-- Progress bar -->
+    <rect x="18" y="94" width="138" height="6" rx="3" fill="#334155" />
+    <rect x="18" y="94" width="96" height="6" rx="3" fill="#A855F7" />
+    <text x="18" y="122" fill="#94A3B8" font-family="sans-serif" font-size="9">70% completed</text>
+    <circle cx="146" cy="120" r="8" fill="#7C3AED" />
+    <text x="146" y="123" fill="#FFF" font-family="sans-serif" font-size="8" text-anchor="middle">K</text>
+
+    <!-- Card 2 in Col 2 -->
+    <rect x="10" y="146" width="154" height="85" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1" />
+    <rect x="18" y="156" width="46" height="16" rx="4" fill="#065F46" />
+    <text x="41" y="168" fill="#A7F3D0" font-family="sans-serif" font-size="9" font-weight="bold" text-anchor="middle">API</text>
+    <text x="18" y="188" fill="#F1F5F9" font-family="sans-serif" font-size="11" font-weight="600">REST Sync Engine</text>
+    <text x="18" y="204" fill="#94A3B8" font-family="sans-serif" font-size="10">State persistence handler</text>
+    <circle cx="146" cy="216" r="8" fill="#059669" />
+    <text x="146" y="219" fill="#FFF" font-family="sans-serif" font-size="8" text-anchor="middle">S</text>
+  </g>
+
+  <!-- Column 3: Completed -->
+  <g transform="translate(402, 96)">
+    <rect width="174" height="244" rx="10" fill="url(#colBg)" stroke="#1E293B" stroke-width="1" />
+    <circle cx="16" cy="20" r="4" fill="#10B981" />
+    <text x="28" y="24" fill="#E2E8F0" font-family="sans-serif" font-size="12" font-weight="bold">COMPLETED</text>
+    <rect x="142" y="12" width="20" height="16" rx="8" fill="#065F46" />
+    <text x="152" y="24" fill="#6EE7B7" font-family="sans-serif" font-size="10" text-anchor="middle">3</text>
+
+    <!-- Card 1 in Col 3 -->
+    <rect x="10" y="40" width="154" height="75" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1" opacity="0.8" />
+    <rect x="18" y="50" width="50" height="16" rx="4" fill="#1E3A8A" />
+    <text x="43" y="62" fill="#93C5FD" font-family="sans-serif" font-size="9" font-weight="bold" text-anchor="middle">AUTH</text>
+    <text x="18" y="82" fill="#CBD5E1" font-family="sans-serif" font-size="11" font-weight="600">JWT Authentication</text>
+    <circle cx="146" cy="100" r="8" fill="#10B981" />
+    <text x="146" y="103" fill="#FFF" font-family="sans-serif" font-size="8" text-anchor="middle">✓</text>
+
+    <!-- Card 2 in Col 3 -->
+    <rect x="10" y="125" width="154" height="75" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1" opacity="0.8" />
+    <rect x="18" y="135" width="56" height="16" rx="4" fill="#581C87" />
+    <text x="46" y="147" fill="#E9D5FF" font-family="sans-serif" font-size="9" font-weight="bold" text-anchor="middle">DESIGN</text>
+    <text x="18" y="167" fill="#CBD5E1" font-family="sans-serif" font-size="11" font-weight="600">Component System</text>
+    <circle cx="146" cy="185" r="8" fill="#10B981" />
+    <text x="146" y="188" fill="#FFF" font-family="sans-serif" font-size="8" text-anchor="middle">✓</text>
+  </g>
+</svg>

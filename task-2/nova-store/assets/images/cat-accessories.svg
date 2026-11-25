@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 700" width="100%" height="100%">
+  <defs>
+    <linearGradient id="accBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1c1917" />
+      <stop offset="50%" stop-color="#292524" />
+      <stop offset="100%" stop-color="#0c0a09" />
+    </linearGradient>
+    <linearGradient id="goldLuxe" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="50%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#92400e" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="700" fill="url(#accBg)" rx="20" />
+  <circle cx="300" cy="320" r="210" fill="#44403c" opacity="0.3" />
+
+  <!-- Luxury Chronograph Watch -->
+  <g transform="translate(300, 310)">
+    <!-- Watch Straps -->
+    <rect x="-30" y="-220" width="60" height="110" rx="10" fill="#78350f" stroke="#92400e" stroke-width="2" />
+    <rect x="-30" y="110" width="60" height="110" rx="10" fill="#78350f" stroke="#92400e" stroke-width="2" />
+    
+    <!-- Watch Case Outer Ring -->
+    <circle cx="0" cy="0" r="105" fill="url(#goldLuxe)" />
+    <!-- Watch Bezel -->
+    <circle cx="0" cy="0" r="92" fill="#0c0a09" stroke="#d97706" stroke-width="3" />
+    <!-- Dial Marks -->
+    <line x1="0" y1="-80" x2="0" y2="-65" stroke="#fbbf24" stroke-width="4" />
+    <line x1="0" y1="80" x2="0" y2="65" stroke="#fbbf24" stroke-width="4" />
+    <line x1="-80" y1="0" x2="-65" y2="0" stroke="#fbbf24" stroke-width="4" />
+    <line x1="80" y1="0" x2="65" y2="0" stroke="#fbbf24" stroke-width="4" />
+    
+    <!-- Subdials -->
+    <circle cx="-35" cy="0" r="20" fill="none" stroke="#78350f" stroke-width="2" />
+    <circle cx="35" cy="0" r="20" fill="none" stroke="#78350f" stroke-width="2" />
+    <circle cx="0" cy="35" r="20" fill="none" stroke="#78350f" stroke-width="2" />
+
+    <!-- Hands -->
+    <line x1="0" y1="0" x2="-25" y2="-45" stroke="#fef08a" stroke-width="5" stroke-linecap="round" />
+    <line x1="0" y1="0" x2="45" y2="-15" stroke="#fef08a" stroke-width="3" stroke-linecap="round" />
+    <line x1="0" y1="15" x2="0" y2="-65" stroke="#ef4444" stroke-width="2" stroke-linecap="round" />
+    <circle cx="0" cy="0" r="7" fill="#fbbf24" />
+
+    <!-- Crown & Pushers -->
+    <rect x="100" y="-12" width="14" height="24" rx="4" fill="url(#goldLuxe)" />
+    <rect x="92" y="-50" width="10" height="16" rx="3" fill="url(#goldLuxe)" />
+    <rect x="92" y="34" width="10" height="16" rx="3" fill="url(#goldLuxe)" />
+  </g>
+
+  <!-- Tag overlay -->
+  <rect x="190" y="615" width="220" height="44" rx="22" fill="#0c0a09" stroke="#fbbf24" stroke-width="1.5" />
+  <text x="300" y="643" fill="#f8fafc" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="bold" text-anchor="middle" letter-spacing="2">ACCESSORIES &amp; LUXE</text>
+</svg>

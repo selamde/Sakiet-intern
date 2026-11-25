@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal Portfolio of Selamsew Dagne - Frontend Developer & Software Engineer building modern, responsive, and user-friendly web applications.">
+  <meta name="author" content="Selamsew">
+  <title>Selamsew Dagne | Frontend Developer &amp; Software Engineer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            dark: {
+              900: '#0B0F19', 
+              800: '#111827', 
+              700: '#1E293B', 
+              600: '#334155'
+            },
+            accent: {
+              indigo: '#6366F1',
+              purple: '#8B5CF6',
+              cyan: '#22D3EE',
+              violet: '#A855F7'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Poppins', 'Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%236366F1'/><text x='50' y='68' font-size='60' font-weight='bold' fill='white' text-anchor='middle'>N</text></svg>">
+</head>
+<body class="bg-[#0B0F19] text-slate-100 min-h-screen flex flex-col antialiased selection:bg-indigo-500 selection:text-white">
+
+  <!-- ====== 1. NAVIGATION BAR ======= -->
+  
+  <div id="navbar"></div>
+
+  <!-- ====== MAIN CONTENT CONTAINER ======= -->
+  <main class="flex-grow pt-20">
+
+    <!-- ============= B. HERO SECTION ============= -->
+   <section id="home" class="relative min-h-[calc(100vh-5rem)] flex items-center justify-center py-16 lg:py-24 overflow-hidden">
+      
+      <!-- Subtle Ambient Glow Orbs -->
+      <div class="absolute top-1/4 left-1/4 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-indigo-600/15 rounded-full blur-3xl pointer-events-none animate-glow"></div>
+      <div class="absolute bottom-1/4 right-1/4 translate-x-1/2 translate-y-1/2 w-96 h-96 bg-purple-600/15 rounded-full blur-3xl pointer-events-none animate-glow" style="animation-delay: 2s;"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          <!-- Hero Text Content (Left Col) -->
+          <div class="lg:col-span-7 flex flex-col items-start text-left">
+            
+            <!-- Availability Badge -->
+            <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-indigo-950/60 border border-indigo-500/30 text-indigo-300 text-xs font-semibold tracking-wide mb-6">
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+              Available for freelance &amp; full-time roles
+            </div>
+
+            <!-- Welcoming Intro -->
+            <p class="text-lg sm:text-xl font-medium text-indigo-400 mb-2 font-mono">
+              Hi, I'm <span class="text-white font-bold">Selamsew</span> 👋
+            </p>
+
+            <!-- Professional Headline -->
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-heading font-extrabold tracking-tight text-white mb-6 leading-tight">
+              Fullstack Developer &amp; <br class="hidden sm:inline">
+              <span class="bg-gradient-to-r from-indigo-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
+                Software Engineer
+              </span>
+            </h1>
+
+            <!-- Short Description -->
+            <p class="text-base sm:text-lg text-slate-300 max-w-2xl mb-8 leading-relaxed">
+              I specialize in crafting modern, responsive, and user-friendly web applications. 
+              Bridging the gap between clean engineering and intuitive UI/UX design to deliver 
+              high-performance digital experiences.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-wrap items-center gap-4 w-full sm:w-auto mb-10">
+              <a href="#projects" class="btn-primary w-full sm:w-auto text-center px-7 py-3.5 rounded-xl text-sm font-semibold tracking-wide flex items-center justify-center gap-2 shadow-lg shadow-indigo-600/25">
+                <span>View My Projects</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                </svg>
+              </a>
+              <a href="#contact" class="btn-secondary w-full sm:w-auto text-center px-7 py-3.5 rounded-xl text-sm font-semibold tracking-wide flex items-center justify-center gap-2">
+                <span>Contact Me</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="flex items-center gap-4 pt-4 border-t border-slate-800/80 w-full sm:w-auto">
+              <span class="text-xs uppercase font-mono tracking-widest text-slate-400">Connect:</span>
+              
+              <!-- GitHub -->
+              <a href="https://github.com/selamde" target="_blank" rel="noopener noreferrer" 
+                 class="w-10 h-10 rounded-xl bg-slate-800/80 border border-slate-700/60 flex items-center justify-center text-slate-300 hover:text-white hover:border-indigo-500 hover:bg-indigo-600/20 transition-all duration-200"
+                 aria-label="Visit GitHub Profile">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </a>
+
+              <!-- LinkedIn -->
+              <a href="https://www.linkedin.com/in/selamsew-dagne-5a3b192ba/" target="_blank" rel="noopener noreferrer" 
+                 class="w-10 h-10 rounded-xl bg-slate-800/80 border border-slate-700/60 flex items-center justify-center text-slate-300 hover:text-white hover:border-indigo-500 hover:bg-indigo-600/20 transition-all duration-200"
+                 aria-label="Visit LinkedIn Profile">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Hero Creative Visual (Right Col) -->
+          <div class="lg:col-span-5 flex justify-center relative">
+            
+            <!-- Floating Creative Code Card -->
+            <div class="w-full max-w-md relative">
+              
+              <!-- Subtle card background glow -->
+              <div class="absolute inset-0 bg-gradient-to-tr from-indigo-500/20 to-purple-500/20 rounded-2xl blur-xl"></div>
+              
+              <div class="relative bg-slate-900/90 border border-slate-800 rounded-2xl p-6 shadow-2xl backdrop-blur-xl">
+                
+                <!-- macOS Style Window Header -->
+                <div class="flex items-center justify-between pb-4 mb-4 border-b border-slate-800">
+                  <div class="flex items-center gap-2">
+                    <span class="w-3 h-3 rounded-full bg-rose-500"></span>
+                    <span class="w-3 h-3 rounded-full bg-amber-500"></span>
+                    <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
+                  </div>
+                  <span class="text-xs font-mono text-slate-400">DeveloperProfile.ts</span>
+                  <div class="w-10"></div>
+                </div>
+
+                <!-- Code Block Content -->
+                <div class="font-mono text-xs sm:text-sm leading-relaxed space-y-2 text-slate-300">
+                  <div><span class="text-indigo-400">const</span> <span class="text-cyan-300">developer</span> = {</div>
+                  <div class="pl-4"><span class="text-purple-300">name</span>: <span class="text-amber-300">'Selamsew'</span>,</div>
+                  <div class="pl-4"><span class="text-purple-300">role</span>: <span class="text-amber-300">'Fullstack Developer'</span>,</div>
+                  <div class="pl-4"><span class="text-purple-300">focus</span>: [<span class="text-emerald-300">'Tailwind CSS'</span>, <span class="text-emerald-300">'JavaScript'</span>, <span class="text-emerald-300">'TypeScript'</span>, <span class="text-emerald-300">'NestJs'</span>, <span class="text-emerald-300">'Go'</span>, <span class="text-emerald-300">'React'</span>, <span class="text-emerald-300">'NextJs'</span>],</div>
+                  <div class="pl-4"><span class="text-purple-300">cleanCode</span>: <span class="text-cyan-400">true</span>,</div>
+                  <div class="pl-4"><span class="text-purple-300">problemSolver</span>: <span class="text-cyan-400">true</span>,</div>
+                  <div class="pl-4"><span class="text-purple-300">currentStatus</span>: <span class="text-amber-300">'Ready for Impact'</span></div>
+                  <div>};</div>
+                </div>
+
+                <!-- Live Execution Output Box -->
+                <div class="mt-4 pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs font-mono text-emerald-400 bg-slate-950/60 p-3 rounded-xl border border-emerald-500/20">
+                  <div class="flex items-center gap-2">
+                    <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                    <span>Ready to collaborate</span>
+                  </div>
+                  <span class="text-slate-400">v2.4.0</span>
+                </div>
+              </div>
+
+              <!-- Floating Tech Badges around Visual -->
+              <div class="absolute -top-4 -right-4 glass-card px-3.5 py-2 rounded-xl border border-indigo-500/30 shadow-lg flex items-center gap-2 animate-float-slow hidden sm:flex">
+                <span class="text-indigo-400 text-sm">⚡</span>
+                <span class="text-xs font-semibold text-slate-200">100% Responsive</span>
+              </div>
+
+              <div class="absolute -bottom-5 -left-4 glass-card px-3.5 py-2 rounded-xl border border-purple-500/30 shadow-lg flex items-center gap-2 animate-float-delayed hidden sm:flex">
+                <span class="text-purple-400 text-sm">🎨</span>
+                <span class="text-xs font-semibold text-slate-200">Pixel Perfect UI</span>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== C. ABOUT ME SECTION ===== -->
+     <section id="about" class="py-20 lg:py-28 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-950/60 border border-indigo-500/30 text-indigo-300 text-xs font-semibold uppercase tracking-wider mb-3">
+            Get To Know Me
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-heading font-bold text-white tracking-tight">
+            About <span class="bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">Myself</span>
+          </h2>
+          <p class="mt-4 text-base sm:text-lg text-slate-300">
+            A developer dedicated to building impactful digital experiences, combining technical precision with eye-catching aesthetics.
+          </p>
+        </div>
+
+        <!-- Main About Grid (Profile visual + Bio text) -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-16">
+          
+          <!-- Profile Image & Quick Facts (Left) -->
+          <div class="lg:col-span-5 flex flex-col items-center">
+            <div class="relative w-64 h-64 sm:w-80 sm:h-80 group">
+              
+              <!-- Glowing ring behind image -->
+              <div class="absolute inset-0 rounded-3xl bg-gradient-to-tr from-indigo-600 to-purple-600 blur-xl opacity-40 group-hover:opacity-75 transition duration-500"></div>
+              
+              <!-- Avatar Container -->
+              <div class="relative w-full h-full rounded-3xl bg-slate-900 border-2 border-indigo-500/40 overflow-hidden shadow-2xl flex items-center justify-center p-2">
+                <img src="assets/images/avatar.svg" alt="Selamsew - Developer Portrait Illustration" class="w-full h-full object-contain rounded-2xl transform transition-transform duration-500 group-hover:scale-105" loading="lazy">
+              </div>
+
+              <!-- Experience Pill Tag -->
+              <div class="absolute -bottom-4 right-4 glass-card px-4 py-2 rounded-xl border border-indigo-500/40 shadow-xl flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-emerald-400"></span>
+                <span class="text-xs font-semibold text-white">Full-Stack Curious</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bio Description & Goals (Right) -->
+          <div class="lg:col-span-7 flex flex-col justify-center">
+            <h3 class="text-2xl font-heading font-bold text-white mb-4">
+              Passionate Full-stack Developer based with a global mindset.
+            </h3>
+            
+            <p class="text-slate-300 leading-relaxed mb-4">
+              Hello! I am a passionate Full-stack Developer and software engineer who loves transforming ideas into responsive, accessible, and elegant web solutions. My journey in web development started with a curiosity for how interactive user interfaces work and quickly grew into a deep dedication to mastering the modern web ecosystem.
+            </p>
+            
+            <p class="text-slate-300 leading-relaxed mb-6">
+              I specialize in clean HTML5, modern CSS3, responsive utility-first styling with Tailwind CSS, and vanilla JavaScript. My goal is to build digital products that not only look visually stunning on all screen sizes, but are also lightning fast, accessible to everyone, and intuitive to use.
+            </p>
+
+            <!-- Quick Stats Bar -->
+            <div class="grid grid-cols-3 gap-4 p-5 rounded-2xl bg-slate-900/60 border border-slate-800">
+              <div class="text-center sm:text-left">
+                <span class="block text-2xl sm:text-3xl font-heading font-extrabold text-indigo-400">2+</span>
+                <span class="text-xs text-slate-400 font-medium">Years Experience</span>
+              </div>
+              <div class="text-center sm:text-left border-x border-slate-800 px-2 sm:px-4">
+                <span class="block text-2xl sm:text-3xl font-heading font-extrabold text-purple-400">15+</span>
+                <span class="text-xs text-slate-400 font-medium">Projects Built</span>
+              </div>
+              <div class="text-center sm:text-left">
+                <span class="block text-2xl sm:text-3xl font-heading font-extrabold text-cyan-400">100%</span>
+                <span class="text-xs text-slate-400 font-medium">Commitment</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- 3 Highlight Cards (Required in Prompt) -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <!-- Highlight Card 1: Passionate Developer -->
+          <div class="glass-card rounded-2xl p-7 border border-slate-800 hover:border-indigo-500/40 transition-all duration-300 group">
+            <div class="w-12 h-12 rounded-xl bg-indigo-950/80 border border-indigo-500/30 flex items-center justify-center text-indigo-400 mb-5 group-hover:scale-110 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+              </svg>
+            </div>
+            <h4 class="text-lg font-heading font-bold text-white mb-2">Passionate Developer</h4>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Enthusiastic about turning complex mockups into pixel-perfect, clean, and maintainable frontend code using semantic standards.
+            </p>
+          </div>
+
+          <!-- Highlight Card 2: Problem Solver -->
+          <div class="glass-card rounded-2xl p-7 border border-slate-800 hover:border-purple-500/40 transition-all duration-300 group">
+            <div class="w-12 h-12 rounded-xl bg-purple-950/80 border border-purple-500/30 flex items-center justify-center text-purple-400 mb-5 group-hover:scale-110 group-hover:bg-purple-600 group-hover:text-white transition-all duration-300">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+              </svg>
+            </div>
+            <h4 class="text-lg font-heading font-bold text-white mb-2">Problem Solver</h4>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Analytical thinker adept at debugging UI inconsistencies, streamlining state flows, and optimizing web performance.
+            </p>
+          </div>
+
+          <!-- Highlight Card 3: Continuous Learner -->
+          <div class="glass-card rounded-2xl p-7 border border-slate-800 hover:border-cyan-500/40 transition-all duration-300 group">
+            <div class="w-12 h-12 rounded-xl bg-cyan-950/80 border border-cyan-500/30 flex items-center justify-center text-cyan-400 mb-5 group-hover:scale-110 group-hover:bg-cyan-600 group-hover:text-white transition-all duration-300">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+              </svg>
+            </div>
+            <h4 class="text-lg font-heading font-bold text-white mb-2">Continuous Learner</h4>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Committed to evolving with modern frontend practices, design systems, JavaScript standards, and developer productivity tools.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====== D. SKILLS SECTION ====== -->
+      <div id="skills"></div>
+
+    <!-- ===== E. PROJECTS SECTION ===== -->
+     <div id="projects"></div>    
+
+    <!-- ====== F. CONTACT SECTION ===== -->
+    <div id="contact"></div>
+
+  </main> 
+
+  <!-- ====== G. FOOTER ===== -->
+  <div id="footer"></div>
+
+  <!-- =============== FLOATING BACK TO TOP BUTTON =============== -->
+  <button id="backToTopBtn" type="button" aria-label="Back to Top"
+          class="hide fixed bottom-6 right-6 z-40 w-12 h-12 rounded-2xl bg-indigo-600/90 hover:bg-indigo-500 text-white border border-indigo-400/40 shadow-xl shadow-indigo-600/30 backdrop-blur-md flex items-center justify-center transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-indigo-400">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7"/>
+    </svg>
+  </button>
+
+  <!-- Core JavaScript File -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>
